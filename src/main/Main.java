@@ -4,14 +4,13 @@
  * and open the template in the editor.
  */
 package main;
-
-import controllers.ControllerSucursal;
-import models.ModelSucursal;
-import views.ViewSucursal;
+import modelo.modeloproveedor;
+import vista.proveedores;
+import controlador.controladorproveedor;
 
 /**
- *importas modelos controles vistas para que se ejecute
- * @author Salvador Hernández Mendoza
+ *
+ * @author LENOVO
  */
 public class Main {
 
@@ -19,10 +18,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ModelSucursal modelSucursal = new ModelSucursal();
-        ViewSucursal viewSucursal = new ViewSucursal();
-        ControllerSucursal controllerSucursal = new ControllerSucursal(modelSucursal, viewSucursal);
-        // TODO code application logic here
+        modeloproveedor modeproveedor = new modeloproveedor();
+        proveedores vistaproveedor = new proveedores();
+        controladorproveedor contraproveedor = new controladorproveedor(modeproveedor, vistaproveedor);
     }
     
 }
